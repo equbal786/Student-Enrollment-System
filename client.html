@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSES</title>
+    <script src="https://kit.fontawesome.com/adf86300ea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="client.css">
+    
+</head>
+<body>
+<!--Code to write students enrollment form submission details-->
+    <div class="nav-bar">
+    <ul>
+       <li><button type="submit" id="btn" value="redirect" onclick="noFault()">Log out</button></li>
+    </ul>
+    </div>  
+    <div class="bgimage">
+    <div id="logo">
+    <h1></h1>
+     <img src="image/logo.png" alt="logo" width="300px">
+    </div>
+    <div id="details">
+        <h3>Please Enter Your Details!</h3>
+    </div>
+    <div id="container">
+    <form action="" autocomplete="off" method="POST" name='google-sheet' onsubmit="return false">
+    <div class="input" id="nameDiv">
+    <label for="date" class="input">Select Your Admission Date:</label>
+    <select name="Admission Date" id="date" required>
+        <option value=""></option>
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+        <option value="2027">2027</option>
+        <option value="2028">2028</option>
+        <option value="2029">2029</option>
+        <option value="2030">2030</option>
+    </select>
+    </div>
+    <div class="input">
+        <label for="course" class="input" aria-required="true">Course:</label>
+        <select name="Course" id="s1c1" onchange="populate(this.id, 's1c2')" required>
+            <option value="">...Choose Course...</option>
+            <option value="BE">BE</option>
+            <option value="B.Pharma">B.Pharma</option>
+            <option value="Diploma">Diploma</option>
+            <option value="MCA">MCA</option>
+            <option value="MBA">MBA</option>
+            <option value="ME">ME</option>
+            <option value="M.Pharma">M.Pharma</option>
+            <option value="M.Tech">M.Tech</option>
+            <option value="B.Arch">B.Arch</option>
+            <option value="Phd">Phd</option>
+        </select>
+    </div>
+    <div class="input">
+        <label for="institute" class="input" aria-required="true">Institution:</label>
+        <select name="Institute" id="institute">
+            <option value="University Institute of Technology, RGPV">University Institute of Technology, RGPV</option>
+            <option value="Sagar Institute of Technology">Sagar Institute of Technology</option>
+            <option value="Radharaman Institute of Technology & Science">Radharaman Institute of Technology & Science</option>
+            <option value="Oriental Institute of Technology">Oriental Institute of Technology</option>
+            <option value="Birla Institute of Technology & Science">Birla Institute of Technology & Science</option>
+            <option value="Lakshmi narayan college of Technology">Lakshmi narayan college of Technology</option>
+            <option value="Bansal College of Engineering">Bansal College of Engineering</option>
+            <option value="J.N College of Technology">J.N College of Technology</option>
+            <option value="Vindya Institute of Technology">Vindya Institute of Technology</option>
+            <option value="Gyan Ganga Institute of Technology">Gyan Ganga Institute of Technology</option>
+        </select>
+    </div>
+    <div class="input">
+        <label for="branch" class="input" aria-required="true">Branch:</label>
+        <select name="Branch" id="s1c2" required>
+        </select>
+    </div>
+    <div class="input"><label for="name" class="input">Your Name:</label> 
+    <input type="text" id="name" name="Students Name" placeholder="Enter your name" autocomplete="off" required pattern="[a-zA-Z\s]{5,}"></div>
+    <div class="input"><label for="enumber" class="input">Enrollment Number:</label> 
+    <input type="text" id="enumber" name="Enrollment Number" placeholder="0234EC4xxx" autocomplete="off" required></div>
+    <div class="input"><label for="number" class="input">Mobile Number:</label> 
+    <input type="number" id="number" name="Mobile Number" placeholder="Mobile number" value="" autocomplete="off" required></div>
+    <div class="input"><label for="Email" class="input">Email:</label> 
+    <input type="email" id="Email" name="Students Email" placeholder="sample@gmail.com" autocomplete="off" required></div>
+    <div id="check"><input type="checkbox" id="cbox" required>&Tab;I agree with <strong>terms &amp; condition</strong></div>
+    </div class="t1">
+        <button type="submit" class="design" id="entry">Submit</button>
+        <span id="text1"></span>
+    </div>
+    </form>
+    </div>
+    <table id="display">
+        <tr>
+            <th>Admission Date</th>
+            <th>Course</th>
+            <th>Institute</th>
+            <th>Branch</th>
+            <th>Full Name</th>
+            <th>Enrollment Number</th>
+            <th>Mobile Number</th>
+            <th>Email Id</th>
+        </tr>
+    </table>
+    </div>
+   <!-- footer Area -->
+   <footer class="footer">
+    <div>
+    <p>Copyright &copy;Digital Duniya</p>
+    <a href="#" class="top"><i class="fa fa-arrow-up" aria-hidden="true"></i> Top</a>
+    <div class="section">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.snapchat.com/" target="_blank"><i class="fa fa-snapchat" aria-hidden="true"></i></a>
+        <a href="https://www.pinterest.ca/" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+        <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    </div>
+    </div>
+    </footer>
+
+    <script src="client.js"></script>
+</body>
+</html>

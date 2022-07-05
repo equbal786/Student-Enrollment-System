@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<title>PSES</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-light-grey">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block"><i class="fa fa-home" area-hidden="true"></i> Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block"><i class="fa fa-clone" area-hidden="true"></i> About</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block"><i class="fa fa-address-book" area-hidden="true"></i> Contact</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="login.html" target="_blank" class="w3-button w3-block"><i class="fa fa-user" area-hidden="true"></i> Account</a>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:60px;margin-bottom:80px">
+  <div class="w3-panel">
+    <img src="image/logo.png" alt="PSES">
+  </div>
+
+  <!-- Slideshow -->
+  <div class="w3-container">
+    <div class="w3-display-container mySlides">
+      <img src="image/image1.jpg" style="width:100%">
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-padding-large w3-animate-bottom" style="background-color: #ed8742;">PSES</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="image/image2.jpg" style="width:100%">
+      <div class="w3-display-middle w3-container w3-padding-32">
+        <span class="w3-padding-large w3-animate-bottom" style="background:#7a7be6;">PSES</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="image/image3.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">PSES</span>
+      </div>
+    </div>
+
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    
+      <div class="w3-center">
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- about -->
+  <div class="w3-center w3-padding-64">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16" id="about">About Us</span>
+  </div>
+  <p class="about">Pro Students Enrollment System is a fully customized website<br> 
+    that'll help the students to Submit their Online Enrollment form<br> 
+    without any great hustle. it's user interface is very simple. Anybody<br>
+    can use this website Either If they've any technical Specialities or not.
+  </p>
+
+    <!-- Contact -->
+  <div class="w3-center w3-padding-32" id="contact">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
+  </div>
+  
+<form class="w3-container" action="#" method="POST" autocomplete="off" name="google-sheet" target="_blank">
+  <div class="w3-section">
+      <label>Name</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" autocomplete="off" required>
+  </div>
+  <div class="w3-section">
+      <label>Email</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+  </div>
+      <div class="w3-section">
+      <label>Subject</label>
+    <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
+    </div>
+  <div class="w3-section">
+      <label>Message</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
+  </div>
+    <button type="submit" id="rData" class="w3-button w3-block w3-black">Send</button>
+    </form>
+</div>
+
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <h4>All Right Reserve To Digital Duniya</h4>
+  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>Home</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.snapchat.com/" target="_blank"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+    <a href="https://www.pinterest.ca/" target="_blank"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+  <p><span>&copy; Copyright by Digital Duniya</span></p>
+</footer>
+
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyn2gBXd0CUOqU2q5fs1rGNkp4CeWFODvo7Bk9ke6UrgsK6cYmtif6Ka5ep97_VbHhsZQ/exec'
+    const form = document.forms['google-sheet']
+              
+  form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>  {alert("Thank You! We, will contact you soon.."), window.location.reload();})
+      .catch(error => console.error('Error!', error.message))
+  })
+
+</script>
+
+</body>
+</html>
